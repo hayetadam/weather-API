@@ -28,7 +28,7 @@
             xhr.onreadystatechange = displayWeather;
             xhr.open('GET', 'http://api.openweathermap.org/data/2.5/weather?q=' + city + '&APPID=' + appID, true);
             xhr.send(null);
-        })
+        });
 
         function displayWeather(event) {
             // XMLHttpRequest.DONE === 4
